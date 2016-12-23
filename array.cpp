@@ -75,7 +75,7 @@ Array &Array::operator=(const Array &a)
     size = a.size;
     // Копирование данных из одного
     // массива в другой
-    memcpy(p, a.p, size);
+    memcpy(p, a.p, size * sizeof(int));
 
     return *this;
 }
